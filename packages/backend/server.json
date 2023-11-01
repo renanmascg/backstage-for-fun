@@ -1,0 +1,46 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Renan",
+      "group": "raftel",
+      "email": "email-teste@gmail.com",
+      "picture": "https://us.123rf.com/450wm/abangaboy/abangaboy2305/abangaboy230500153/208478458-cute-ninja-chibi-mascot-vector-cartoon-style.jpg?ver=6"
+    },
+    {
+      "id": 1,
+      "name": "Felipe",
+      "group": "raftel-2",
+      "email": "email-teste2@gmail.com",
+      "picture": "https://us.123rf.com/450wm/abangaboy/abangaboy2305/abangaboy230500153/208478458-cute-ninja-chibi-mascot-vector-cartoon-style.jpg?ver=6"
+    },
+    {
+      "id": 1,
+      "name": "Nicolas",
+      "group": "raftel",
+      "email": "email-teste3@gmail.com",
+      "picture": "https://us.123rf.com/450wm/abangaboy/abangaboy2305/abangaboy230500153/208478458-cute-ninja-chibi-mascot-vector-cartoon-style.jpg?ver=6"
+    },
+    {
+      "id": 1,
+      "name": "Dennys",
+      "group": "raftel-2",
+      "email": "email-teste4@gmail.com",
+      "picture": "https://us.123rf.com/450wm/abangaboy/abangaboy2305/abangaboy230500153/208478458-cute-ninja-chibi-mascot-vector-cartoon-style.jpg?ver=6"
+    }
+  ],
+  "groups": [
+    {
+      "id": 1,
+      "title": "raftel",
+      "email": "raftel@gmail.com",
+      "description": "super descricao"
+    },
+    {
+      "id": 1,
+      "title": "raftel-2",
+      "email": "raftel@gmail.com",
+      "description": "super descricao"
+    }
+  ]
+}

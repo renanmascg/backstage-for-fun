@@ -1,0 +1,28 @@
+version: "3.9"
+
+services:
+  database: #ESSE É O NOME DO SERVICE QUE DEVE ESTAR NO ARQUIVO DE CRIAÇÃO DE CONEXÃO
+    image: postgres
+    container_name: database_ignite
+    restart: always
+    ports: 
+      - 5432:5432
+    environment:
+      - POSTGRES_USER=terroir
+      - POSTGRES_PASSWORD=password
+      - POSTGRES_DB=terroir
+    volumes:
+      - pgdata:/data/postgres
+    networks:
+      - terroir-portal_default
+
+volumes:
+  pgdata:
+    driver: local
+
+networks:
+  terroir-portal_default:
+    ipam:
+      driver: default
+      config:
+        - subnet: "172.16.238.0/24"

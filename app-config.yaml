@@ -1,9 +1,9 @@
 app:
-  title: Scaffolded Backstage App
+  title: Terroir Portal
   baseUrl: http://localhost:3000
 
 organization:
-  name: My Company
+  name: Terroir Technologies
 
 backend:
   # Used for enabling authentication, secret is shared by all backend plugins
@@ -27,9 +27,9 @@ backend:
     credentials: true
   # This is for local development only, it is not recommended to use this in production
   # The production database configuration is stored in app-config.production.yaml
-  database:
-    client: better-sqlite3
-    connection: ':memory:'
+  # database:
+  #   client: better-sqlite3
+  #   connection: ':memory:'
   # workingDirectory: /tmp # Use this to configure a working directory for the scaffolder, defaults to the OS temp-dir
 
 integrations:
@@ -77,20 +77,25 @@ catalog:
     - allow: [Component, System, API, Resource, Location]
   locations:
     # Local example data, file locations are relative to the backend process, typically `packages/backend`
-    - type: file
-      target: ../../examples/entities.yaml
+    # - type: file
+    #   target: ../../examples/entities.yaml
 
-    # Local example template
-    - type: file
-      target: ../../examples/template/template.yaml
-      rules:
-        - allow: [Template]
+    # # Local example template
+    # - type: file
+    #   target: ../../examples/template/template.yaml
+    #   rules:
+    #     - allow: [Template]
 
-    # Local example organizational data
-    - type: file
-      target: ../../examples/org.yaml
+    # # Local example organizational data
+    - type: url
+      target: https://github.com/renanmascg/chat-rbmq-nodejs/blob/main/catalog-info.yaml
       rules:
         - allow: [User, Group]
+    
+    - type: url
+      target: https://github.com/backstage/software-templates/blob/main/scaffolder-templates/docs-template/template.yaml
+      rules:
+        - allow: [Template]
 
     ## Uncomment these lines to add more example data
     # - type: url
