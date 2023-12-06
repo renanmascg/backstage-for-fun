@@ -76,9 +76,8 @@ catalog:
   rules:
     - allow: [Component, System, API, Resource, Location]
   locations:
-    # Local example data, file locations are relative to the backend process, typically `packages/backend`
-    # - type: file
-    #   target: ../../examples/entities.yaml
+    - type: file
+      target: ../../examples/entities.yaml
 
     # # Local example template
     # - type: file
@@ -91,7 +90,7 @@ catalog:
       target: https://github.com/renanmascg/chat-rbmq-nodejs/blob/main/catalog-info.yaml
       rules:
         - allow: [User, Group]
-    
+
     - type: url
       target: https://github.com/backstage/software-templates/blob/main/scaffolder-templates/docs-template/template.yaml
       rules:
@@ -106,3 +105,7 @@ catalog:
     #   target: https://github.com/backstage/backstage/blob/master/packages/catalog-model/examples/acme-corp.yaml
     #   rules:
     #     - allow: [User, Group]
+jenkins:
+  baseUrl: http://localhost:8080
+  username: renanmascg
+  apiKey: c324c5761d533383608762e2f9e68c5c

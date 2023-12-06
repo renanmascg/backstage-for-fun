@@ -9,21 +9,28 @@
     },
     {
       "id": 1,
-      "name": "Felipe",
-      "group": "raftel-2",
-      "email": "email-teste2@gmail.com",
-      "picture": "https://us.123rf.com/450wm/abangaboy/abangaboy2305/abangaboy230500153/208478458-cute-ninja-chibi-mascot-vector-cartoon-style.jpg?ver=6"
-    },
-    {
-      "id": 1,
-      "name": "Nicolas",
-      "group": "raftel",
-      "email": "email-teste3@gmail.com",
-      "picture": "https://us.123rf.com/450wm/abangaboy/abangaboy2305/abangaboy230500153/208478458-cute-ninja-chibi-mascot-vector-cartoon-style.jpg?ver=6"
-    },
-    {
-      "id": 1,
       "name": "Dennys",
+      "group": "raftel-2",
+      "email": "email-teste4@gmail.com",
+      "picture": "https://us.123rf.com/450wm/abangaboy/abangaboy2305/abangaboy230500153/208478458-cute-ninja-chibi-mascot-vector-cartoon-style.jpg?ver=6"
+    },
+    {
+      "id": 1,
+      "name": "Renan-2",
+      "group": "raftel-2",
+      "email": "email-teste4@gmail.com",
+      "picture": "https://us.123rf.com/450wm/abangaboy/abangaboy2305/abangaboy230500153/208478458-cute-ninja-chibi-mascot-vector-cartoon-style.jpg?ver=6"
+    },
+    {
+      "id": 1,
+      "name": "Renan-3",
+      "group": "raftel-2",
+      "email": "email-teste4@gmail.com",
+      "picture": "https://us.123rf.com/450wm/abangaboy/abangaboy2305/abangaboy230500153/208478458-cute-ninja-chibi-mascot-vector-cartoon-style.jpg?ver=6"
+    },
+    {
+      "id": 1,
+      "name": "Dennys-2",
       "group": "raftel-2",
       "email": "email-teste4@gmail.com",
       "picture": "https://us.123rf.com/450wm/abangaboy/abangaboy2305/abangaboy230500153/208478458-cute-ninja-chibi-mascot-vector-cartoon-style.jpg?ver=6"
@@ -38,7 +45,7 @@
     },
     {
       "id": 1,
-      "title": "raftel-2",
+      "title": "raftel-3",
       "email": "raftel@gmail.com",
       "description": "super descricao"
     }

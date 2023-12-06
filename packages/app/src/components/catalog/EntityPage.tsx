@@ -58,6 +58,12 @@ import {
 import { TechDocsAddons } from '@backstage/plugin-techdocs-react';
 import { ReportIssue } from '@backstage/plugin-techdocs-module-addons-contrib';
 
+import {
+  EntityJenkinsContent,
+  EntityLatestJenkinsRunCard,
+  isJenkinsAvailable,
+} from '@backstage/plugin-jenkins';
+
 const techdocsContent = (
   <EntityTechdocsContent>
     <TechDocsAddons>
@@ -72,6 +78,15 @@ const cicdContent = (
   <EntitySwitch>
     <EntitySwitch.Case if={isGithubActionsAvailable}>
       <EntityGithubActionsContent />
+    </EntitySwitch.Case>
+
+    <EntitySwitch.Case if={isJenkinsAvailable}>
+      <Grid item sm={6}>
+        <EntityLatestJenkinsRunCard
+          branch='main'
+          variant="gridItem"
+        />
+      </Grid>
     </EntitySwitch.Case>
 
     <EntitySwitch.Case>
@@ -90,6 +105,11 @@ const cicdContent = (
         }
       />
     </EntitySwitch.Case>
+
+    <EntitySwitch.Case if={isJenkinsAvailable}>
+      <EntityJenkinsContent />
+    </EntitySwitch.Case>
+  
   </EntitySwitch>
 );
 
